@@ -1,0 +1,80 @@
+*,
+:after,
+:before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Updated base styles */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#map {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+body {
+  position: relative;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  background-color: #f1f1f1;
+}
+
+/* Updated marker position styling */
+.marker-position {
+  position: relative;
+  bottom: 10px;
+  left: 10px;
+  z-index: 999;
+  padding: 10px;
+  font-weight: 700;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.nav-btn {
+  background: #4caf50;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.nav-btn:hover {
+  background: #45a049;
+}
+
+.custom-popup .leaflet-popup-content-wrapper {
+  border-radius: 8px;
+  padding: 12px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .custom-popup .leaflet-popup-content-wrapper {
+    width: 250px !important;
+  }
+
+  .leaflet-popup-content {
+    font-size: 14px;
+  }
+
+  .nav-btn {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+}
